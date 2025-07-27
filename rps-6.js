@@ -10,28 +10,28 @@ function playGame(playerMove) {
 	const computerMove = pickComputerMove();
 	let result = '';
 
-	if (playerMove === 'Rock') {
-		if (computerMove === 'Rock') {
+	if (playerMove === 'rock') {
+		if (computerMove === 'rock') {
 			result = 'Tie';
-		} else if (computerMove === 'Paper') {
+		} else if (computerMove === 'paper') {
 			result = 'You Lose';
-		} else if (computerMove === 'Scissors') {
+		} else if (computerMove === 'scissors') {
 			result = 'You Win';
 		}
-	} else if (playerMove === 'Paper') {
-		if (computerMove === 'Rock') {
+	} else if (playerMove === 'paper') {
+		if (computerMove === 'rock') {
 			result = 'You Win';
-		} else if (computerMove === 'Paper') {
+		} else if (computerMove === 'paper') {
 			result = 'Tie';
-		} else if (computerMove === 'Scissors') {
+		} else if (computerMove === 'scissors') {
 			result = 'You Lose';
 		}
-	} else if (playerMove === 'Scissors') {
-		if (computerMove === 'Rock') {
+	} else if (playerMove === 'scissors') {
+		if (computerMove === 'rock') {
 			result = 'You Lose';
-		} else if (computerMove === 'Paper') {
+		} else if (computerMove === 'paper') {
 			result = 'You Win';
-		} else if (computerMove === 'Scissors') {
+		} else if (computerMove === 'scissors') {
 			result = 'Tie';
 		}
 	}
@@ -67,11 +67,11 @@ function pickComputerMove () {
 	let computerMove = '';
 
 	if (x >= 0 && x < 1/3) {
-		computerMove = 'Rock';
+		computerMove = 'rock';
 	} else if (x >= 1/3 && x < 2/3) {
-		computerMove = 'Paper';
+		computerMove = 'paper';
 	} else if (x >= 2/3 && x < 1) {
-		computerMove = 'Scissors';
+		computerMove = 'scissors';
 	}
 
 	return computerMove;
